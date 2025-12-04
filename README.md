@@ -33,6 +33,6 @@ Students can register their details, and the system allows editing, deleting, an
 
 *** GITHUB LINK PROVIDED HERE ***
 
-
+https://github.com/TriptiThakur2003/studentRegistrationSystem.git
 
 *** GITHUB LINK PROVIDED HERE ***
