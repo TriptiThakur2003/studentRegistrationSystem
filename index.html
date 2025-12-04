@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/image.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="animated-bg"></div>
+
+    <main class="container">
+      <header class="header glass-card">
+        <h1>Student Registration System</h1>
+        <p>Register students, view records, edit and delete details easily.</p>
+      </header>
+
+      <!-- Registration Form -->
+      <section class="form-section glass-card">
+        <h2>Register Student</h2>
+        <form id="studentForm">
+          <div class="input-group">
+            <label for="studentName">Student Name</label>
+            <input
+              type="text"
+              id="studentName"
+              placeholder="Enter full name"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="studentID">Student ID</label>
+            <input type="text" id="studentID" placeholder="Enter ID" required />
+          </div>
+
+          <div class="input-group">
+            <label for="email">Email ID</label>
+            <input type="email" id="email" placeholder="Enter email" required />
+          </div>
+
+          <div class="input-group">
+            <label for="contact">Contact Number</label>
+            <input
+              type="text"
+              id="contact"
+              placeholder="Enter contact number"
+              required
+            />
+          </div>
+
+          <button type="submit" class="btn-submit">Add Student</button>
+        </form>
+      </section>
+
+      <!-- Display Records -->
+      <section class="display-section glass-card">
+        <h2>Registered Students</h2>
+        <div class="table-container" id="tableContainer">
+          <table id="studentTable">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody">
+              <!-- rows added by JS -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
